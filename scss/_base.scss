@@ -1,0 +1,141 @@
+body{
+    height: 650h;
+    font-family: "Helvetica",sans-serif;
+    color: white;
+}
+h1,h2,h3{
+    font-family: "Athelas",serif;
+    font-size: 3em;
+}
+p{
+    font-family:"Athelas",serif;
+    font-size: 2em;
+}
+
+.page{
+    width: 100vw;
+    height: 100vh;
+}
+#title{
+    background: url("../img/rover.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+#exped{
+    z-index: 2;
+    background: url("../img/exped.jpg");
+    background-size: cover;
+    text-align: center;
+    h2{
+        margin-top: 0;
+        padding-top: 10vh;
+    }
+
+}
+#recon{
+    background: url("../img/recon.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+#recov{
+    background: url("../img/ship.jpg");
+    
+    background-size: cover;
+}
+#extra{
+    background: url("../img/extract.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+#hunts{
+    background: url("../img/ship.jpg");
+    background-size: cover;
+}
+#foote{
+    height: 50vh;
+    
+    background: black;
+    background-size: cover;
+}
+.logo{
+    background: url("../img/sunlogo.svg") no-repeat center center;
+    width: 30vw;
+    height: 20vh;
+    position: relative;
+}
+.blackbox{
+    position: absolute;
+    top:0;
+    bottom:0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,1);
+    opacity: 0;
+}
+
+.exdex{
+    z-index: -5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5vw;
+    width: 60%;
+    margin: 0 auto;
+    transition: 1s;
+    
+
+}
+
+
+.exgr{
+    font-family: "Athelas", serif;
+    font-size: 2em;
+    height: 5vh;
+    text-align: center;
+    background: rgba(0,0,0,.5);
+    transition: 1s ease-in;
+    border-radius: 5px;
+    
+}
+
+
+#arctic:hover{
+        background-size: cover;
+
+        height: 50vh;
+        background: url('../img/arctic.jpg') no-repeat center ;
+
+}
+#desert:hover{
+
+        height: 50vh;
+        background: url('../img/desert.jpg') no-repeat center ;
+       
+
+}
+#tropical:hover{
+    background-attachment: fixed;
+    background-size: cover;
+    height: 50vh;
+    background:url('../img/tropical.jpg')no-repeat center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

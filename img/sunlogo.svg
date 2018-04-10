@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 912 296" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="Artboard1" transform="matrix(3.07092,0,0,1,0,0)">
+        <rect x="0" y="0" width="296.689" height="295.934" style="fill:none;"/>
+        <g transform="matrix(0.325635,0,0,1,-0.539146,-2.03281)">
+            <path d="M17.542,191.159C51.176,186.266 84.572,190.587 116.569,177.768C133.642,170.928 150.021,150.355 166.483,140.56C174.621,147.171 183.923,147.919 195.543,150C208.2,137.041 217.344,136.691 220.368,121.944C229.401,124.383 240.503,113.972 249.49,112.547C254.936,105.785 262.091,95.858 262.859,90.705C278.244,101.503 280.756,119.228 289.501,131.334C295.004,168.9 287.714,206.654 259.518,244.714C204.4,308.915 100.623,283.554 100.623,283.554C119.725,293.934 209.595,292.594 226.082,271.259C231.191,264.647 266.876,236.591 272.101,225.373C277.716,213.316 233.135,218.127 187.763,214.936C185.597,214.784 154.654,217.26 121.915,216.731C95.406,216.303 67.72,211.961 53.177,217.983C25.165,229.583 62.688,263.516 59.755,261.411C33.459,241.794 19.885,218.222 17.542,191.159Z" style="fill:white;"/>
+            <g transform="matrix(-0.303852,0.621985,-0.898515,-0.438942,260.395,1.79581)">
+                <path d="M134.487,56.3C131.346,56.3 128.796,59.187 128.796,62.743C128.796,66.299 131.346,69.186 134.487,69.186C133.545,67.682 132.78,65.313 132.78,62.743C132.78,60.173 133.545,57.804 134.487,56.3Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(0.350319,0.672128,0.886778,-0.462196,70.9385,-4.15822)">
+                <path d="M134.487,56.3C131.346,56.3 128.796,59.187 128.796,62.743C128.796,66.299 131.346,69.186 134.487,69.186C133.545,67.682 132.78,65.313 132.78,62.743C132.78,60.173 133.545,57.804 134.487,56.3Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(1.05335,0,0,1.05058,-17.8746,-11.3074)">
+                <circle cx="159.372" cy="153.541" r="136.322" style="fill:none;stroke:white;stroke-width:9.03px;"/>
+            </g>
+            <circle cx="85.094" cy="76.397" r="20.096" style="fill:white;"/>
+        </g>
+        <g transform="matrix(0.278485,0,0,0.855206,14.8895,63.9186)">
+            <text x="310.692px" y="84.185px" style="font-family:'Athelas-Bold', 'Athelas';font-weight:700;font-size:80.538px;fill:white;">RISIN<tspan x="523.635px 580.333px " y="84.185px 84.185px ">G </tspan>SUN</text>
+            <text x="310.692px" y="164.723px" style="font-family:'Athelas-Bold', 'Athelas';font-weight:700;font-size:80.538px;fill:white;">EXPEDITIO<tspan x="741.248px 800.041px " y="164.723px 164.723px ">N </tspan>Co.</text>
+        </g>
+    </g>
+</svg>
