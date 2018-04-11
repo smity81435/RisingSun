@@ -1,5 +1,5 @@
 body{
-    height: 650h;
+    height: 5525px;
     font-family: "Helvetica",sans-serif;
     color: white;
 }
@@ -14,13 +14,24 @@ p{
 
 .page{
     width: 100vw;
-    height: 100vh;
+    height: 850px;
 }
 #title{
     background: url("../img/rover.jpg");
     background-size: cover;
     background-attachment: fixed;
     
+}
+.arrow{
+    margin: 0 auto;
+    position: absolute;
+    background: url('../img/arrowdown.svg') no-repeat;
+    width:50px;
+    height: 50px;
+    top: 800px;
+    right: 0;
+    left: 0;
+
 }
 #exped{
     z-index: 2;
@@ -29,14 +40,24 @@ p{
     text-align: center;
     h2{
         margin-top: 0;
+        margin: 0 auto;
         padding-top: 10vh;
+        width: 80%;
     }
 
+}
+
+.desc{
+    width: 80vw;
+    margin: 0 auto;
 }
 #recon{
     background: url("../img/recon.jpg");
     background-attachment: fixed;
     background-size: cover;
+    h2{
+        margin-top: 0;
+    }
 }
 #recov{
     background: url("../img/ship.jpg");
@@ -65,13 +86,17 @@ p{
     position: relative;
 }
 .blackbox{
+    z-index: 2;
     position: absolute;
-    top:0;
-    bottom:0;
+    height: 850px;
+    top: 0;
+    bottom: 0;
+    
     right: 0;
     left: 0;
     background: rgba(0,0,0,1);
     opacity: 0;
+    
 }
 
 .exdex{
@@ -90,7 +115,7 @@ p{
 .exgr{
     font-family: "Athelas", serif;
     font-size: 2em;
-    height: 5vh;
+    height: 50vh;
     text-align: center;
     background: rgba(0,0,0,.5);
     transition: 1s ease-in;
@@ -98,28 +123,58 @@ p{
     
 }
 
-
+#arctic{
+    
+}
 #arctic:hover{
         background-size: cover;
-
-        height: 50vh;
+        
         background: url('../img/arctic.jpg') no-repeat center ;
-
+}
+#desert{
+    
 }
 #desert:hover{
-
-        height: 50vh;
+        
         background: url('../img/desert.jpg') no-repeat center ;
-       
-
 }
 #tropical:hover{
     background-attachment: fixed;
     background-size: cover;
-    height: 50vh;
+    
     background:url('../img/tropical.jpg')no-repeat center;
 
 }
+.navlist{
+    z-index: 10;
+    position: fixed;
+    right:50px;
+    top: 80vh;
+    list-style: none;
+    
+    
+    li{
+        a{
+        color: white;
+        opacity: .5;
+        transition: 500ms;
+        }
+        a:hover{
+            opacity: 1;
+        }
+        
+    }
+
+}
+a:link{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
 
 
 
