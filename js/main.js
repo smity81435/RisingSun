@@ -1,3 +1,4 @@
+
 $(window).scroll(function(){
     var x = $(this).scrollTop();
     var banana = x/800;
@@ -72,11 +73,39 @@ $(window).scroll(function(){
     
 });
 
-$(document).ready(function (){
-    $(".arrow").click(function (){
-        console.log('Clicked.');
-        $('html, body').animate({
-            scrollTop: $("#exped").offset().top
-        }, 2000);
+$(function() {
+    $("#sky").hover(function(){
+        $("#sky").parent().parent().css({"background":"url('../img/airrecon.jpg') no-repeat"});
+        $("#sky").parent().parent().css({"background-size":"cover"});
+        $("#surface").css({"opacity":".3"});
+        $("#subsurface").css({"opacity":".3"});
+    },
+    function(){ 
+        $("#sky").parent().parent().css({"background":"url('../img/recon.jpg') no-repeat"});
+        $("#sky").parent().parent().css({"background-size":"cover"});
+        $("#surface").css({"opacity":"1"});
+        $("#subsurface").css({"opacity":"1"});
+    });
+    $("#surface").hover(function () {
+        $("#surface").parent().parent().css({"background":"url('../img/landrecon.jpg') no-repeat"});
+        $("#surface").parent().parent().css({"background-size":"cover"});
+        $("#sky").css({"opacity":".3"});
+        $("#subsurface").css({"opacity":".3"});
+    },function(){
+        $("#surface").parent().parent().css({"background":"url('../img/recon.jpg') no-repeat"});
+        $("#sky").parent().parent().css({"background-size":"cover"});
+        $("#sky").css({"opacity":"1"});
+        $("#subsurface").css({"opacity":"1"});
+    });
+    $("#subsurface").hover(function () {
+        $("#subsurface").parent().parent().css({"background":"url('../img/subsurf.jpg') no-repeat"});
+        $("#subsurface").parent().parent().css({"background-size":"cover"});
+        $("#sky").css({"opacity":".3"});
+        $("#surface").css({"opacity":".3"});
+    },function(){
+        $("#subsurface").parent().parent().css({"background":"url('../img/recon.jpg') no-repeat"});
+        $("#sky").parent().parent().css({"background-size":"cover"});
+        $("#sky").css({"opacity":"1"});
+        $("#surface").css({"opacity":"1"});
     });
 });

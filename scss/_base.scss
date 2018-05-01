@@ -6,15 +6,42 @@ body{
 h1,h2,h3{
     font-family: "Athelas",serif;
     font-size: 3em;
+    margin-top:0;
 }
 p{
     font-family:"Athelas",serif;
-    font-size: 2em;
+    font-size: 1em;
 }
-
 .page{
     width: 100vw;
     height: 850px;
+    transition: 1s;
+}
+
+.navlist{
+    opacity: .4;
+    z-index: 10;
+    position: fixed;
+    right:20px;
+    top: 60vh;
+    list-style: none;
+    
+    
+    li{
+        a{
+        color: white;
+        opacity: .5;
+        transition: 500ms;
+        }
+        a:hover{
+            opacity: 1;
+        }
+        
+    }
+
+}
+.navlist:hover{
+    opacity: 1;
 }
 #title{
     background: url("../img/rover.jpg");
@@ -41,88 +68,34 @@ p{
     h2{
         margin-top: 0;
         margin: 0 auto;
-        padding-top: 10vh;
+        padding-top: 2vh;
         width: 80%;
     }
-
-}
-
-.desc{
-    width: 80vw;
-    margin: 0 auto;
-}
-#recon{
-    background: url("../img/recon.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    h2{
-        margin-top: 0;
+    p{
+        font-size: 1em;
     }
-}
-#recov{
-    background: url("../img/ship.jpg");
-    
-    background-size: cover;
-}
-#extra{
-    background: url("../img/extract.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-}
-#hunts{
-    background: url("../img/ship.jpg");
-    background-size: cover;
-}
-#foote{
-    height: 50vh;
-    
-    background: black;
-    background-size: cover;
-}
-.logo{
-    background: url("../img/sunlogo.svg") no-repeat center center;
-    width: 30vw;
-    height: 20vh;
-    position: relative;
-}
-.blackbox{
-    z-index: 2;
-    position: absolute;
-    height: 850px;
-    top: 0;
-    bottom: 0;
-    
-    right: 0;
-    left: 0;
-    background: rgba(0,0,0,1);
-    opacity: 0;
-    
-}
+    overflow: hidden;
 
+}
 .exdex{
     z-index: -5;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 5vw;
-    width: 60%;
+    grid-column-gap: 10px;
+    width: 100vw;
     margin: 0 auto;
     transition: 1s;
-    
-
 }
-
-
 .exgr{
     font-family: "Athelas", serif;
     font-size: 2em;
-    height: 50vh;
+    height: 600px;
     text-align: center;
     background: rgba(0,0,0,.5);
     transition: 1s ease-in;
     border-radius: 5px;
     
 }
-
 #arctic{
     
 }
@@ -145,26 +118,150 @@ p{
     background:url('../img/tropical.jpg')no-repeat center;
 
 }
-.navlist{
-    z-index: 10;
-    position: fixed;
-    right:50px;
-    top: 80vh;
-    list-style: none;
+.desc{
+    width: 80vw;
+    margin: 0 auto;
+}
+#recon{
+    background: url("../img/recon.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    h2{
+        margin-top: 0;
+    }
+    p{
+        font-size: 1.5em;
+    }
     
-    
-    li{
-        a{
-        color: white;
-        opacity: .5;
-        transition: 500ms;
-        }
-        a:hover{
-            opacity: 1;
-        }
+}
+.display{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 0;
+    height: 700px;
+}
+.miggie{
+    margin: 0 auto;
+    text-align: center;
+    width: 100vw;
+    height: 250px;
+}
+#sky{
+    text-align: center;
+} 
+#surface{
+    text-align: center;
+}
+#subsurface{
+    text-align: center;
+}
+#recov{
+    background: url("../img/ship.jpg");
+    background-size: cover;
+    h2{
+        margin: 0 auto;
+        padding-top: 40vh;
+        text-align: center;
+    }
+    p{
+        width: 70vw;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    @include butts;
+}
+.recontent{
+    text-align: center;
+}
+#extra{
+    background: url("../img/extract.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    h2{
+        
+        padding-top: 5vh;
+    }
+    p{
+        width: 70vw;
+        margin: 0 auto;
+        font-size: 1.5em;
+        text-align: center;
         
     }
+    ul{
+        width: 30vw;
+        margin: 0 auto;
+        margin-top: 5vh;
+        font-size: 1.5em;
+        font-family: "Athelas", serif;
+        list-style-type: none;
+        text-align: center;
+        padding-left: 0;
+        background: rgba(0,0,0,.5);
+        border-radius: 10px;
+        box-shadow: 0px 0px 50px 30px rgba(0,0,0,.5);
+        
+    }
+    li{
+        padding: 5px;
+        margin: 0 auto;
+    }
+    button{
+        
+        margin: 0 auto;
+    }
+    @include butts;
+}
+#hunts{
+    background: url("../img/hunt.jpg");
+    background-size: cover;
+    @include butts;
+    text-align: center;
+    h2{
+        padding-top: 5vh;
+    }
+    h3{
+        padding-top: 10vh;
+        font-size: 1.5em;
+    }
+    p{
+        width: 40vw;
+        margin: 0 auto;
+    }
+}
 
+
+#foote{
+    height: 50vh;
+    
+    background: black;
+    background-size: cover;
+}
+.logo{
+    position: relative;
+    background: url("../img/sunlogo.svg") no-repeat center center;
+    width: 30vw;
+    height: 20vh;
+    left: 50px;
+}
+.blackbox{
+    z-index: 2;
+    position: absolute;
+    height: 850px;
+    top: 0;
+    bottom: 0;
+    
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,1);
+    opacity: 0;
+    
+}
+.btmlogo{
+    background: url('../img/sunlogo.svg');
+    
 }
 a:link{
     text-decoration: none;
@@ -174,7 +271,37 @@ a:hover{
     opacity: 1;
     cursor: pointer;
 }
-
+.footercontent{
+    
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    h3{
+        font-size: 1em;
+    }
+    p{
+        font-size: 1em;
+        position: absolute;
+        top: 5450px;
+        bottom: 0;
+        right: 0;
+        left:0;
+        color: grey;
+    }
+    
+}
+.footcolumn{
+    ul{
+        list-style: none;
+        padding-left: 0;
+        li{
+            margin-bottom: 10px;
+            opacity: .6;
+        }
+    }
+}
 
 
 
