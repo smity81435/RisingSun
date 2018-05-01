@@ -17,7 +17,6 @@ p{
     height: 850px;
     transition: 1s;
 }
-
 .navlist{
     opacity: .4;
     z-index: 10;
@@ -132,8 +131,7 @@ p{
     }
     p{
         font-size: 1.5em;
-    }
-    
+    }  
 }
 .display{
     display: grid;
@@ -231,8 +229,6 @@ p{
         margin: 0 auto;
     }
 }
-
-
 #foote{
     height: 50vh;
     
@@ -302,8 +298,182 @@ a:hover{
         }
     }
 }
+#peach{
+        z-index: 1;
+        height: 100vh;
+        width: 40vw;
+        background: rgb(18,18,18);
+        color: white;
+        position: fixed;
+        top: 0;
+        transition: all 2s;
+    ul{
+            width: 100%;
+            padding-top: 20vh;
+            padding-left: 0px;
+            margin: 0 auto;
+            list-style: none;
+            li{
+                text-align: center;
+                text-decoration: none;
+                opacity: 1;
+                width: 100%;
+                background: none;
+                margin: 0 auto;
+                padding-top: 5vh;
+                a{
+                    text-decoration: none;
+                    color:white;
+                    cursor: pointer;
+                }
+            }   
+        } 
+    }
+.container{
+    z-index: 3;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+@media only screen and (max-width: 700px) {
+    body{
+        height: 630vh;
+    }
+    p{
+        font-size: 1em;
+    }
 
+    .logo{
+        width: 80vw;
+        left: 0;
+        right: 0;
+        top: 20vh;
+        margin: 0 auto;
+    }
+    .page{
+        height: 95vh;
+            h1,h2{
+                font-size: 1em;
+            }
+            p{
+                font-size: 1em;
+            }
+        overflow: hidden;
+    }
+    .navlist{
+        display: none;
+    }
+    .blackbox{
+        height: 95vh;
+    }
+    .arrow{
+        top: 85vh;
+    }
+    .container {
+    z-index: 10;
+    display: inline-block;
+    cursor: pointer;
+    }
 
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #ffffff;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {opacity: 0;}
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+    #exped{
+        overflow: hidden;
+    }
+    .exdex{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, auto);
+    }
+    .exgr{
+        height: 10vh;
+    }
+    .exgr:hover{
+        height: 30vh;
+        z-index: 5;   
+    }
+    #tropical:hover{
+        margin-top: 0;
+        #arctic{
+            height: 2vh;
+        }
+    }
+    #recon{
+        h3{
+            font-size: 1.5em;
+        }
+        p{
+            font-size: 1em;
+        }
+        
+    }
+    .display{
+        height: 95vh;
+        grid-template-rows: repeat(3, auto);
+    }
+    .miggie{
+        height: 20vh;
+    }
+    #recov{
+        
+    }
+    #extra{
+        p{
+            font-size: 1em;
+        }
+        ul{
+            li{
+                font-size: .75em;
+            }
+        }
+    }
+    #hunts{
+        
+    }
+    #foote{
+        p{
+            top: 620vh;
+        }
+    }
+    .footcolumn{
+        p{
+            font-size: .75em;
+        }
+        ul{
+            padding-left: 5px;
+            padding-right: 5px;
+            li{
+                font-size: .75em;
+            }
+        }
+        
+    }
+    
+    
+} //end query
+.banana{
+    left:-40vw;
+}
+.active{
+    left: 0;
+}
 
 
 

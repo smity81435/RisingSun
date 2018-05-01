@@ -1,4 +1,15 @@
 
+var yup = false;
+function burger(x){ 
+    x.classList.toggle("change"); 
+    rampage();
+
+};
+
+function rampage(){
+        $("#peach").toggleClass("active");
+};
+
 $(window).scroll(function(){
     var x = $(this).scrollTop();
     var banana = x/800;
@@ -109,3 +120,4 @@ $(function() {
         $("#surface").css({"opacity":"1"});
     });
 });
+
